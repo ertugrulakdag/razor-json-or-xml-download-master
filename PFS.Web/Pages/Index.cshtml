@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>
+        Case: Product Feeder System.
+    </p>
+    <form method="post">
+        <button type="submit" asp-page-handler="Json" class="btn btn-primary">json-download</button>
+        <button type="submit" asp-page-handler="Xml" class="btn btn-danger">xml-download</button>
+    </form>
+
+</div>
